@@ -1,0 +1,10 @@
+<html>
+    <head><title>Bank</title></head>
+    <body>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">Save</button>
+        </form>
+    </body>
+</html>

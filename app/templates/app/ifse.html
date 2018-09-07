@@ -1,0 +1,16 @@
+<html>
+    <head><title>Bank</title></head>
+    <body>
+        <!--<form method="POST">
+                    {% csrf_token %}
+                    <label>IFSC Code: </label>
+                    <input type="text">
+                    <button>Submit</button>-->
+                    <form method="POST">
+                            {% csrf_token %}
+                            {{ form }}
+                            <button type="submit">Save</button>
+                            
+                        </form>
+    </body>
+</html>

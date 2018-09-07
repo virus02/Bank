@@ -1,0 +1,12 @@
+<html>
+    <head></head>
+    <body>
+        <ul>
+            {% for c in b %}
+            <a href ="{% url 'city' c.id %}">
+                <li>{{ c.b_name }}</li></a>
+            {% endfor %}
+        </ul>    
+        
+    </body>
+</html>

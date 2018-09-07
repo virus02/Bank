@@ -1,0 +1,13 @@
+<html>
+    <head></head>
+    <body>
+        <label>IFSC Codes:</label>
+        <ul>
+            {% for b in banks %}
+            <a href ="{% url 'branch' b.id %}">
+                <li>{{ b.ifsc }}</li></a>
+            {% endfor %}
+        </ul>    
+        
+    </body>
+</html>
